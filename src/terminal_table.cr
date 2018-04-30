@@ -1,7 +1,7 @@
 require "./terminal_table/*"
 
 class TerminalTable
-  alias CellValue = Nil | Bool | Int::Signed | Int::Unsigned | Float32 | Float64 | String | Array(CellValue) | Hash(String, CellValue)
+  alias CellValue = Nil | Bool | Int::Signed | Int::Unsigned | Float32 | Float64 | String | Colorize::Object(String) | Array(CellValue) | Hash(String, CellValue)
 
   getter rows : Array(Row)
   getter style : Style
